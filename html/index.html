@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gage Nesbit</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/smallScreenStyles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="../JS/htmx-2.0.3.js"></script>
+        <script src="../JS/main.js"></script>
+</head>
+    <body>
+
+
+        <header>
+            <div class="homeButtonDiv">
+                <a href="index.html" class="homeButton">GKN</a >
+            </div>
+            
+            
+            <div id="navigation">
+                <div id="triangle"></div>
+                <ul id="nav">
+                    <li id="menuButton" class="navItem"><a class="navAnchor" href="../html/index.html#aboutMe">-  -   - </a></li>
+
+                    <li class="navItem"><a class="navAnchor" href="../html/index.html#aboutMe">About Me</a></li>
+                    <li class="navItem"><a class="navAnchor" href="../html/index.html#skills">Skills</a></li>
+                    <li class="navItem"><a class="navAnchor" href="../html/index.html#projects">Projects</a></li>
+                    <li class="navItem"><a class="navAnchor" href="../html/index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+
+
+
+        <div class="content">
+            <div class="heroPage">
+                <h1>Hi, I’m Gage Nesbit,</h1><h2 id="heroText">       Software Developer</h2>
+            </div>
+            
+    
+    
+    
+            <div id="aboutMe">
+                <h1 id="aboutHeader">About Me</h1>
+                <br>
+                <div id="aboutMeContent">
+                    <div id="aboutMeBackground">
+                        <h2>Background</h2>
+                        <p>My name is Gage Nesbit and I am currently an undergraduate student at Montana State University. I will be graduating in December of 2024 with my Bachelors of Science in computer science. After graduating I plan on moving back home to western Washington state to pursue my career. I am passionate about software and would like to apply the skills that I have learned while earning my degree.
+                        </p>
+                    </div>
+    
+                    <div id="aboutMeApproach">
+                        <h2>My Approach to Software</h2>
+                        <p>Developing software is a continuous process of refinement that allows me to apply my creativity and problem solving skills. I strive to create software that functions well, is maintainable and follows sound design principles.
+                        </p>
+                    </div>
+                </div>
+                    
+    
+            </div>
+    
+            <br>
+            
+            <div id="skills">
+                
+
+                <div id="skillsContent">
+                    <div id="skillListContainer">
+                        <h1 id="skillsHeader">My Technical Skills:</h1>
+                        <ul id="skillList">
+                            <li onclick="changeDescription(this)" id="selectedSkill" class="skillListItem">Web Development</li>
+                            <li onclick="changeDescription(this)" class="skillListItem">Database Management</li>
+                            <li onclick="changeDescription(this)" class="skillListItem">CyberSecurity</li>
+                            <li onclick="changeDescription(this)" class="skillListItem">Version Control</li>
+
+                        </ul>
+                    </div>
+                    <div id="skillDescriptionContainer">
+                       <p id="skillDescription"> Proficiency in HTML, CSS, JavaScript and additional experience with PHP and HTMX. With a specialization in hypermedia systems and the advantages that they provide.
+
+
+                    </p> 
+                    </div>
+                </div>
+                
+            </div>
+    
+            <br>
+    
+            <div id="projects">
+                <h1>My Projects</h1>
+                
+                <div id="projectsContainer">
+                    
+
+                    
+                    <div class="project">
+                        <a class="projectText" href="../html/UICourseProject.html">
+                        <div>
+                            <p>UI Course Project</p>
+                            
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="project">
+                        <a class="projectText" href="">
+                        <div>
+                            <p>TODO Web App</p>
+                            
+                        </div>
+                        </a>
+                    </div>
+                    <div id="cubeProject" class="project">
+                        <a class="projectText" href="">
+                        <div>
+                            <p>Gages's Puzzle Cube</p>
+                            
+                        </div>
+                        </a>
+                    </div>
+
+                    
+                    
+                    
+                </div>
+            </div>
+    
+            <br>
+    
+            <div id="contact">
+                <h1>Contact Me:</h1>
+                <form action="">
+                    <input class="textField" type="text" id="name" name="name" placeholder="Your full name.."> 
+                    <br>
+                    <input class="textField" type="text" id="email" name="email" placeholder="Your email.."> 
+                    <br>               </form>
+                    <textarea name="text" id="text" placeholder="Enter your message here.."></textarea>
+                    <br>
+                    <input id="submitButton" type="submit" value="Send">
+                </form>
+               
+            </div>
+    
+            <br>
+
+        </div>
+
+        <div id="socialLinkContainer">
+            <a  href="https://www.linkedin.com/in/gage-nesbit-360503317/"><img src="../images/linkedIn.png" class="socialLink" alt=""></a>
+            <a  href="https://github.com/gagenesbit"><img src="../images/github.png" class="socialLink" alt=""></a>
+        
+        </div>
+        
+        <footer>
+            <p>
+                Email: gagenesbit31@gmail.com
+                <br>
+                Phone: (360)789-6152
+            </p>
+        </footer>
+
+    </body>
+</html>
