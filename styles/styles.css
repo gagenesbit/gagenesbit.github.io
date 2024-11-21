@@ -365,3 +365,7 @@ footer{
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
 }
 
+#contact{
+    display: none;
+    margin-bottom: 100px;
+}
