@@ -250,8 +250,11 @@ margin: auto;
 #projectsContainer{
    
     text-align: center;
+    margin: auto;
     display: flex;
     gap: 5%;
+    width: 60%;
+    max-width: 1000px;
    
 }
 
@@ -263,7 +266,7 @@ margin: auto;
     flex: 1;
     background-color: rgb(59, 129, 74);
     border-radius: 10px;
-    width: 20%;
+    width: 10%;
     height: 200px;
     
     display: flex;
