@@ -50,6 +50,9 @@
                     <p>We used the css library pico css to give us a functional and asthetic layout. We did in a few small intstances write some in-line styles to style elements to our needs</p>
 
                     <h4>HTMX:</h4>
+                    <div class="imageContainer">
+                        <img class="todoImage" src="../images/HTMX.png" alt="">
+                    </div>
                     <p>HTMX is a JavaScript library that allows more hypermedia controls to be injected into html. It gave us as developers the power to add lots of functionality and quality of life improvements without large JavaScript frameworks.</p>
 
                     <h4>JavaScript</h4>
@@ -65,6 +68,9 @@
                     <p>Jinja is an HTML templating language that feels like an obvious option for our needs in this project it perfectly bridges the gap between HTML and python. By giving us the ability to have dynamically generated HTML our apps functionality and user experience was greatly improved.</p>
                     
                     <h4>PeeWee ORM with SQLite:</h4>
+                    <div class="imageContainer">
+                        <img class="todoImage" src="../images/DB.png" alt="">
+                    </div>
                     <p>PeeWee is an object relational model that allowed us to connect our backend to a SQLite database. Its syntax was easy to learn and doesn't feel too far off from writing SQL directly in python but it gives you a few helpful guardrails.</p>
                 
 
@@ -73,15 +79,23 @@
             <h2>Our Development Process:</h2>
                 <p>The first portion of our development was done together as a class. After that portion of the development was done we split off into groups and spent time brainstorming features that would improve the user experience. We then seperatly implemented features that improved the user experience by providing more features and security.</p>
                 <h3>Web 1.0:</h3>
+                <div class="imageContainer">
+                    <img class="todoImage" src="../images/reorder.png" alt="">
+                </div>
+                
                 <p>The first iteration of our application was developed with a web 1.0 mindset. That meant most of our interaction with the user was occuring via forms issuing post and get requests. We began by outlining what our app was going to need to do. We took this and built the intial layout and functionality. After that was completed we implemented a connection to our database via PeeWee, this required us to reimplement the way our data model was designed but the trade-off was definitly worth it. The ability to have our TODOs persist past memory was highly valuable by speeding up our development process.</p>
                 <h3>Adding HTMX</h3>
                 <p>The addition of HTMX to our application added lots of small quality of life changes that really made the user experience more smooth. These changes allowed the application to update the page while maintaining scroll state. This included toggling the completness of TODOs, reorder of TODOs and active search that updated results as a user provided input. </p>
                 <h3>Expanding Functionality</h3>
                     <p>My group had three members and we each decided on a feature or an area of the user experience that we wanted to improve. We decided on application security, adding the ability to have multiple users, and adding information onto a users TODO.</p>
                     <p>For security implemented some HTML escaping to prevent XSS(Cross-Site Scripting) attacks. This user input sanitization can give users a better piece of mind that their information is secure within our system. We also implemented feedback to the user, if a user tries to bypass the required attribute in the HTML and enter an invalid TODO with missing information they are given a notification window indicating what error occured. </p>
+                    <div class="imageContainer">
+                        <img class="todoImage" src="../images/login.png" alt="">
+                    </div>
                     <p>The addition of multiple users in our system may seem obvious but it was important that our first iteration was functioning how we intended before we expanded to adding this feature. This feature allows our application to be much more powerful. A user is able to create a username and password which they can use on their subsequent visits to our site to access their TODOs. This change required some changes to our database by giving a todo a userID which is associated with a user and filter all TODOs based on that ID.</p>
                     <p>We added a few more pieces of information to the TODOs including an optional due date. This allows our application to give the user more flexibility and sort their TODOs by due date. We also gave the</p>
-                <h3>Summary</h3>
+                
+                    <h3>Summary</h3>
                 <p>One of the best things about this project was the freedom we had to develop our project. Since we had spent some time defining our goals we had a clear vision on what user experience improvements needed to be made. Once we had each implemented our respective features we presented them to one another explaining how we implmented each feature. We then tested one anothers features to ensure robust functionality. Overall, I'm proud with where we are at on this project. We created an application with a solid user experience using the design principles we have learned.</p>
             </div>
         

@@ -27,6 +27,22 @@ hr{
     width: 90%;
     margin-left: 0%;
 }
-img{
+.todoImage{
+    width: 500px;
+    display: block;
     margin: auto;
+}
+
+.imageContainer{
+    margin: auto;
+}
+
+.prototypeImage{
+    width: 200px;
+    height: 450px;
+    margin: auto;
+}
+
+p{
+    font-size: 1rem;
 }
