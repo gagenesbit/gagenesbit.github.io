@@ -73,6 +73,7 @@ nav{
     background-color: var(--seafoam);
     border-radius: 32px;
     color: var(--white);
+    text-decoration: none;
 }
 #contactMe:hover{
     color: var(--purple);
@@ -132,12 +133,14 @@ nav{
 
 .socialLink{
     margin-top: 8px;
-    padding-top: 8px;
-    width: 32px;
+    
+    width: 48px;
     transition: width 0.5s ease;
+    background: transparent;
 }
+
 .socialLink:hover{
-    width: 36px;
+    filter: drop-shadow(2px 4px 16px var(--teagreen));
 }
 
 #downloadButton{
@@ -147,6 +150,7 @@ nav{
     border-radius: 20px;
     padding: 12px;
     margin-left: 32px;
+    margin-bottom: 32px;
     font-size: 1rem;
     display: inline-block;
     vertical-align: middle;

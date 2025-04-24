@@ -13,10 +13,13 @@
     #landingTextContainer{
         margin-right: 0px;
     }
+   
     #downloadButton{
         margin-top: 16px;
         margin: auto;
+        margin-bottom: 32px;
     }
+
     #heroImage{
         display: none;
     }
@@ -27,6 +30,11 @@
     }
     #aboutMeTextContainer{
         min-width: 300px;
+    }
+
+    .projectBackground{
+        width: 450px;
+        margin: 16px;
     }
     .technologiesContainer{
         display: none;
