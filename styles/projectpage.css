@@ -1,0 +1,44 @@
+:root {
+    --white:    #ffffff;
+    --seafoam:  #92BDA3;
+    --sage:     #A1BA89;
+    --teagreen: #A5CC6B;
+    --brown:    #806D40;
+    --purple:     #714B66;
+}
+
+
+#summaryContainer{
+    background-color: var(--white);
+    padding: 80px 0; 
+}
+
+
+#summaryContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+    max-width: 1200px;  
+    padding: 0 20px; 
+    width: 70%;
+}
+
+#summaryTextContainer {
+    flex: 1; 
+    margin-right: 64px; 
+    padding: 8px;
+
+    width: 30%;
+}
+#projectTitleHeader{
+    color: var(--seafoam);
+}
+
+
+#thumbnailImage{
+    width: 40%;
+    border-radius: 32px;
+    box-shadow: 32px -32px var(--teagreen);
+}
+

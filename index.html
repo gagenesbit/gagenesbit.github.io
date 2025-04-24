@@ -4,166 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gage Nesbit</title>
-        <link rel="stylesheet" href="./styles/styles.css">
-        <link rel="stylesheet" href="./styles/smallScreenStyles.css">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="./JS/htmx-2.0.3.js"></script>
-        <script src="./JS/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+    
 </head>
     <body>
+        
 
-
-        <header>
-            <div class="homeButtonDiv">
-                <a href="index.html" class="homeButton">GKN</a >
+        <nav>
+            <a id="homeButton" href="./index.html">GKN</a>
+            <div id="linksContainer">
+                <a class="navbarLink" href="#aboutmeContainer">About Me</a>
+                <a class="navbarLink" href="#projectsContainer">Projects</a>
+                <a class="navbarLink" href="#experienceContainer">Experience</a>
+                <a class="navbarLink" href="#contactContainer">Contact Me</a>
             </div>
             
-            
-            <div id="navigation">
-                <div id="triangle"></div>
-                <ul id="nav">
-                    <li id="menuButton" class="navItem"><a class="navAnchor" href="index.html#aboutMe">-  -   - </a></li>
+        </nav>
 
-                    <li class="navItem"><a class="navAnchor" href="index.html">About Me</a></li>
-                    <li class="navItem"><a class="navAnchor" href="index.html#skills">Skills</a></li>
-                    <li class="navItem"><a class="navAnchor" href="index.html#projects">Projects</a></li>
-                    <li id="contact" class="navItem"><a class="navAnchor" href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </header>
+        <div id="content">
 
+            <section id="landingContainer">
+                <div id="landingContent">  
 
+                    <div id="landingTextContainer">
 
-
-
-        <div class="content">
-            <div class="heroPage">
-                <h1>Hi, I’m Gage Nesbit,</h1><h2 id="heroText">       Software Developer</h2>
-            </div>
-            
-    
-    
-    
-            <div id="aboutMe">
-                <h1 id="aboutHeader">About Me</h1>
-                <br>
-                <div id="aboutMeContent">
-                    <div id="aboutMeBackground">
-                        <h2>Background</h2>
-                        <p>
-                            My name is Gage Nesbit and I am currently an undergraduate student at Montana State University. I will be graduating in December of 2024 with my Bachelors of Science in computer science. After graduating I plan on moving back home to western Washington state to pursue my career in software engineering. I am passionate about software and would like to apply the skills that I have learned while earning my degree.
-
-                        </p>
-                    </div>
-    
-                    <div id="aboutMeApproach">
-                        <h2>My Approach to Software</h2>
-                        <p>
-                            Developing software is all about creating solutions and tools for problems that people are having. This process may start with a simple idea but through a continuous process of refinement, I can apply my creativity and problem-solving skills. I strive to create software that functions well, is maintainable, and follows sound design principles.
-                        </p>
-                    </div>
-                </div>
-                    
-    
-            </div>
-    
-            <br>
-            
-            <div id="skills">
-                
-
-                <div id="skillsContent">
-                    <div id="skillListContainer">
-                        <h1 id="skillsHeader">My Technical Skills:</h1>
-                        <ul id="skillList">
-                            <li onclick="changeDescription(this)" id="selectedSkill" class="skillListItem">Web Development</li>
-                            <li onclick="changeDescription(this)" class="skillListItem">Database Management</li>
-                            <li onclick="changeDescription(this)" class="skillListItem">CyberSecurity</li>
-                            <li onclick="changeDescription(this)" class="skillListItem">Version Control</li>
-
-                        </ul>
-                    </div>
-                    <div id="skillDescriptionContainer">
-                       <p id="skillDescription"> Proficiency in HTML, CSS, JavaScript and additional experience with PHP and HTMX. With a specialization in hypermedia systems and the advantages that they provide.
-
-
-                    </p> 
-                    </div>
-                </div>
-                
-            </div>
-    
-            <br>
-    
-            <div id="projects">
-                <h1>My Projects</h1>
-                
-                <div id="projectsContainer">
-                    
-
-                    <div class="project" id="UIProject">
-                        <a class="projectText" href="./html/UICourseProject.html">
+                        <h1 id="heroText"><span id="helloHighlight">Hello!</span><br> I'm Gage Nesbit, <br> <span id="jobTitle">Software Developer</span></h1>
                         
-                            <p>UI Course Project</p>
-                            
+
+                        <a  href=""><img class="socialLink" src="./images/linkedIn.png" alt="LinkedIn Icon"></a>
+                        <a  href=""><img class="socialLink" src="./images/github.png" alt="LinkedIn Icon"></a>
+                        
+
+                        <a href="./Resume.pdf" download><button id="downloadButton">Download Resume</button></a>
+
+                    </div>
+                    
+                    <img src="./images/heroImage.JPG" alt="This is the hero image" id="heroImage">
+
+
+                </div>
+            </section>
+            
+
+
+
+            <section id="aboutmeContainer">
+                
+
+                <div id="aboutmeContent">  
+                    <img src="./images/heroImage.JPG" alt="This is the hero image" id="aboutMeImage">
+                    
+                    <div id="aboutMeTextContainer">
+                        
+                        <h2 id="aboutMeHeader" class="sectionHeading">About Me</h2>
+
+                        <h3  class="sectionSubheading aboutMeSubheading"> Background</h3>
+                            <p class="bodyText aboutMeParagraph">
+                                My name is Gage Nesbit and I am currently an undergraduate student at Montana State University. I will be graduating in December of 2024 with my Bachelors of Science in computer science. After graduating I plan on moving back home to western Washington state to pursue my career in software engineering. I am passionate about software and would like to apply the skills that I have learned while earning my degree.
+                            </p>
+
+                        <h3 class="sectionSubheading aboutMeSubheading" > My Approach to Software</h3>
+                            <p class="bodyText aboutMeParagraph">
+                                Developing software is all about creating solutions and tools for problems that people are having. This process may start with a simple idea but through a continuous process of refinement, I can apply my creativity and problem-solving skills. I strive to create software that functions well, is maintainable, and follows sound design principles.
+                            </p>
+                    </div> 
+
+                </div>  
+
+            </section>
+
+
+
+            <section id="projectsContainer">
+                <h2  id="projectsHeading" class="sectionHeading">Projects</h2>
+                <div id="projectsContent">
+                    <div class="projectBackground">
+                        <a class="project" href="./html/flashcard.html">
+                            <img class="projectThumbnail" src="./images/flashcardimages/1.1_01.png" alt=""> 
+                            <div class="projectText">
+                                <h3  class="sectionSubheading projectTitle">Flash Card Web App</h3>
+                                <div class="technologiesContainer">
+                                    <p class="technology bodyText">Go</p>
+                                    <p class="technology bodyText">Gin</p>
+                                    <p class="technology bodyText">MySQL</p>
+                                    <p class="technology bodyText">TypeScript</p>
+                                    <p class="technology bodyText">HTMX</p>
+                                    
+                                </div>
+                            </div>
+                        
+                        </a>
+                    </div>
+                    <div class="projectBackground">
+                        <a class="project"  href="./html/todoApp.html">
+                            <img class="projectThumbnail" src="./images/HTMX.png" alt=""> 
+                            <div class="projectText">
+                                <h3  class="sectionSubheading projectTitle">To Do Web App</h3>
+                                <div class="technologiesContainer">
+                                    <p class="technology bodyText">Python</p>
+                                    <p class="technology bodyText">Flask</p>
+                                    <p class="technology bodyText">MySQL</p>
+                                    <p class="technology bodyText">Pico CSS</p>
+                                    <p class="technology bodyText">jinja2</p>
+                                </div>
+                            </div>
+                        
+                        </a>
+                    </div>
+                    <div class="projectBackground">
+                        <a class="project"  href="./html/githubpagessite.html">
+                            <img class="projectThumbnail" src="./images/thissite.png" alt=""> 
+                            <div class="projectText">
+                                <h3  class="sectionSubheading projectTitle">This Site</h3>
+                                <div class="technologiesContainer">
+                                    <p class="technology bodyText">HTML</p>
+                                    <p class="technology bodyText">CSS</p>
+                                    <p class="technology bodyText">JavaScript</p>
+                                </div>
+                            </div>
                         
                         </a>
                     </div>
                     
-                    <div class="project" id="todoProject">
-                        <a class="projectText" href="./html/todoApp.html">
-                        <div>
-                            <p>TODO Web App</p>
-                            
+                    
+                    
+                </div>
+                
+            </section>
+
+
+
+
+            <section id="experienceContainer">
+                <div id="experienceContent">
+                    <h2 class="sectionHeading">Experience</h2>
+                    <h3 class="sectionSubheading">Education</h3>
+
+                    <hr>
+                        <p id="educationText" class="bodyText">BS - Computer Science GPA 3.93  Montana State University Bozeman, MT</p>
+                    <hr>
+
+                    <h3 class="sectionSubheading">Work Experience</h3>
+                        <div class="job">
+                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
+                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <ul>
+                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
+                                <li class="bodyText">Developed scripts to migrate the database</li>
+                                <li class="bodyText">Optimized database using indices.</li>
+                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
+                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                            </ul>
                         </div>
-                        </a>
-                    </div>
+                       
+                        <hr>
+                        <div class="job">
+                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
+                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <ul>
+                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
+                                <li class="bodyText">Developed scripts to migrate the database</li>
+                                <li class="bodyText">Optimized database using indices.</li>
+                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
+                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                            </ul>
+                        </div>
+                       
+                        <hr>
+                        <div class="job">
+                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
+                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <ul>
+                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
+                                <li class="bodyText">Developed scripts to migrate the database</li>
+                                <li class="bodyText">Optimized database using indices.</li>
+                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
+                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                            </ul>
+                        </div>
+                       
+                        <hr>
+                        <div class="job">
+                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
+                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <ul>
+                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
+                                <li class="bodyText">Developed scripts to migrate the database</li>
+                                <li class="bodyText">Optimized database using indices.</li>
+                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
+                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                            </ul>
+                        </div>
+                       
                     
-
-                    
-                    
-                    
+                        
                 </div>
-            </div>
-    
-            <br>
-    
-            <div id="contact">
-                <h1>Contact Me:</h1>
-                <form action="">
-                    <input class="textField" type="text" id="name" name="name" placeholder="Your full name.."> 
-                    <br>
-                    <input class="textField" type="text" id="email" name="email" placeholder="Your email.."> 
-                    <br>               </form>
-                    <textarea name="text" id="text" placeholder="Enter your message here.."></textarea>
-                    <br>
-                    <input id="submitButton" type="submit" value="Send">
-                </form>
-               
-            </div>
-    
-            <br>
+                
 
-        </div>
+            </section>
 
-        <div id="socialLinkContainer">
-            <a  href="https://www.linkedin.com/in/gage-nesbit-360503317/"><img src="./images/linkedIn.png" class="socialLink" alt=""></a>
-            <a  href="https://github.com/gagenesbit"><img src="./images/github.png" class="socialLink" alt=""></a>
-        
+
+            <section id="contactContainer">
+                <div id="contactContent">
+                    
+                    <form id="contactForm" action="https://formsubmit.co/gagenesbit31@gmail.com" method="POST">
+                        
+                        <h2 id="contactHeading" class="sectionHeading">Contact Me</h2>
+                        <input class="contactField"  type="text" placeholder="Name" required>
+                        
+                        <br>
+                        <input class="contactField" type="email" placeholder="Email" required>
+                        <br>
+                        <textarea id="messageField" class="contactField" type="text" name="Message" placeholder="Message"></textarea>
+                        <br>
+                        <input type="text" name="_honey" style="display:none">
+                        <input id="submitContactFormButton" class="contactField" type="submit">
+                    </form>
+                </div>
+                
+            </section>
         </div>
-       
-        
         <footer>
-            <p>
-                Email: gagenesbit31@gmail.com
-                <br>
-                Phone: (360)789-6152
-            </p>
+            <div id="footerContent">
+                <p>© 2025 Gage Nesbit | All Rights Reserved</p>
+            </div>
+            
         </footer>
+        
+
+
+
+
 
     </body>
 </html>
