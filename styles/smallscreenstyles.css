@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+    #linksContainer{
+        display: none;
+    }
+
+    #landingContainer{
+        padding-top: 128px; 
+        
+    }
+    #landingContent{
+        width: 80%;
+    }
+    #landingTextContainer{
+        margin-right: 0px;
+    }
+    #downloadButton{
+        margin-top: 16px;
+        margin: auto;
+    }
+    #heroImage{
+        display: none;
+    }
+    #aboutMeImage{
+        margin: auto;
+        width: 80%;
+        box-shadow: -16px -16px  var(--teagreen), -32px -32px  var(--purple);
+    }
+    #aboutMeTextContainer{
+        min-width: 300px;
+    }
+    .technologiesContainer{
+        display: none;
+    }
+
+    #experienceContent{
+        width: 90%;
+    }
+
+    #contactForm{
+        min-width: 320px;
+        box-shadow: 16px -16px var(--brown);
+    }
+    #submitContactFormButton {
+        width: 40%;
+    }
+
+
+
+    #summaryContainer {
+        background-color: var(--white);
+        padding: 80px 0;
+        padding-top: 64px;
+    }
+    #summaryContent{
+        width: 80%;
+        padding: 0px;
+    }
+
+    #summaryTextContainer {
+        flex: 1;
+        flex-direction: column;
+        margin-right: 0px;
+        
+    }
+    
+    #smallScreenThumbnailImage{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 32px;
+        border-radius: 32px;
+        box-shadow: 16px -16px var(--teagreen);
+    }
+    #thumbnailImage {
+        display: none;
+        
+    }
+   
+  }
