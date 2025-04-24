@@ -68,6 +68,16 @@ nav{
     margin-right: 4%;
     margin-top: 12px;
 }
+
+#contactMe{
+    background-color: var(--seafoam);
+    border-radius: 32px;
+    color: var(--white);
+}
+#contactMe:hover{
+    color: var(--purple);
+    box-shadow: 0px 0px 6px black;
+}
 .navbarLink{
     padding: 16px;
     color: black;
@@ -87,6 +97,7 @@ nav{
 #landingContainer {
     background-color: var(--white);
     padding: 150px 0;  
+    padding-top: 250px;  
 }
 
 #landingContent {
@@ -136,7 +147,7 @@ nav{
     border-radius: 20px;
     padding: 12px;
     margin-left: 32px;
-    
+    font-size: 1rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -167,13 +178,12 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-between;
+    
     align-items: center;
     margin: 0 auto; 
     max-width: 1200px;  
     padding: 0 20px; 
-    width: 80%;
-   
+    width: 80%; 
 }
 
 #aboutMeHeader{
@@ -196,9 +206,11 @@ nav{
 }
 #aboutMeTextContainer{
     flex: 1; 
-    margin-right: 64px; 
+     
     padding: 8px;
     width: 25%;
+    min-width: 400px;
+    max-width: 500px;
 }
 
 
@@ -218,7 +230,7 @@ nav{
     justify-content: center;
 }
 #projectsHeading{
-    padding-left: 10%;
+    padding-left: 12.5%;
     color: var(--teagreen);
     background-color: var(--white);
     padding-top: 32px;
@@ -325,6 +337,7 @@ hr{
     border-radius: 32px;
     width: 60%;
     min-width: 360px;
+    max-width: 640px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,7 +351,7 @@ hr{
     margin: 16px;
     width: 75%;
     padding: 16px;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     border-radius: 8px;
     border: solid 2px var(--white);
 }

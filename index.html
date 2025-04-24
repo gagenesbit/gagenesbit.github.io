@@ -20,7 +20,7 @@
                 <a class="navbarLink" href="#aboutmeContainer">About Me</a>
                 <a class="navbarLink" href="#projectsContainer">Projects</a>
                 <a class="navbarLink" href="#experienceContainer">Experience</a>
-                <a class="navbarLink" href="#contactContainer">Contact Me</a>
+                <a id="contactMe" class="navbarLink" href="#contactContainer">Contact Me</a>
             </div>
             
         </nav>
@@ -39,7 +39,7 @@
                         <a  href=""><img class="socialLink" src="./images/github.png" alt="LinkedIn Icon"></a>
                         
 
-                        <a href="./Resume.pdf" download><button id="downloadButton">Download Resume</button></a>
+                        <a  href="./Resume.pdf" download><button id="downloadButton">Download Resume</button></a>
 
                     </div>
                     
@@ -56,7 +56,7 @@
                 
 
                 <div id="aboutmeContent">  
-                    <img src="./images/heroImage.JPG" alt="This is the hero image" id="aboutMeImage">
+                    <img src="./images/portrait.jpg" alt="This is the hero image" id="aboutMeImage">
                     
                     <div id="aboutMeTextContainer">
                         
@@ -151,7 +151,7 @@
                     <h3 class="sectionSubheading">Work Experience</h3>
                         <div class="job">
                             <strong class="jobTitle">Cybersecurity Research Assistant </strong>
-                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <p class="bodyText">Montana State University         Bozeman, MT         11/24 - 12/24</p>
                             <ul>
                                 <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
                                 <li class="bodyText">Developed scripts to migrate the database</li>
@@ -163,42 +163,37 @@
                        
                         <hr>
                         <div class="job">
-                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
-                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <strong class="jobTitle">Resnet Help Desk Analyst</strong>
+                            <p class="bodyText">Montana State University &nbsp;&nbsp;&nbsp; Bozeman, MT &nbsp;&nbsp;&nbsp; 1/24 - 11/24</p>
                             <ul>
-                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
-                                <li class="bodyText">Developed scripts to migrate the database</li>
-                                <li class="bodyText">Optimized database using indices.</li>
-                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
-                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                                <li class="bodyText">Assisted users with digital devices both in-person and remotely.</li>
+                                <li class="bodyText">Provided support for password resets, applications, and device configuration.</li>
+                                <li class="bodyText">Diagnosed hardware issues and handled repair and component replacement.</li>
+                                <li class="bodyText">Imaged machines in an enterprise IT environment.</li>
+                                <li class="bodyText">Installed network infrastructure including cable runs, switches, access points, cameras, and keycard scanners.</li>
                             </ul>
                         </div>
-                       
                         <hr>
                         <div class="job">
-                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
-                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <strong class="jobTitle">Computer Science Course Assistant</strong>
+                            <p class="bodyText">Montana State University &nbsp;&nbsp;&nbsp; Bozeman, MT &nbsp;&nbsp;&nbsp; 8/23 - 12/23</p>
                             <ul>
-                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
-                                <li class="bodyText">Developed scripts to migrate the database</li>
-                                <li class="bodyText">Optimized database using indices.</li>
-                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
-                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                                <li class="bodyText">Led lab sections, introducing material and assignments to students.</li>
+                                <li class="bodyText">Helped students build foundational programming knowledge through in-lab assistance.</li>
+                                <li class="bodyText">Held office hours to provide personalized support and instruction.</li>
                             </ul>
                         </div>
-                       
                         <hr>
                         <div class="job">
-                            <strong class="jobTitle">Cybersecurity Research Assistant </strong>
-                            <p class="bodyText">Montana State University Bozeman, MT 11/24 - 12/24</p>
+                            <strong class="jobTitle">Seasonal Maintenance Worker</strong>
+                            <p class="bodyText">City of Tumwater Public Works &nbsp;&nbsp;&nbsp; Tumwater, WA &nbsp;&nbsp;&nbsp; Summer 2023</p>
                             <ul>
-                                <li class="bodyText">Worked with the graphical database Neo4J to visualize large datasets.</li>
-                                <li class="bodyText">Developed scripts to migrate the database</li>
-                                <li class="bodyText">Optimized database using indices.</li>
-                                <li class="bodyText">Gained an understanding of vulnerability severity classification.</li>
-                                <li class="bodyText">Used GitHub to version control the code base in a collaborative environment.</li>
+                                <li class="bodyText">Assisted with upkeep and repair of public infrastructure and facilities.</li>
+                                <li class="bodyText">Operated tools and machinery to maintain city properties and public areas.</li>
+                                <li class="bodyText">Worked outdoors in a team setting to ensure timely maintenance operations.</li>
                             </ul>
                         </div>
+                        
                        
                     
                         
@@ -211,15 +206,15 @@
             <section id="contactContainer">
                 <div id="contactContent">
                     
-                    <form id="contactForm" action="https://formsubmit.co/gagenesbit31@gmail.com" method="POST">
+                    <form id="contactForm" action="https://formsubmit.co/a5bb280d9b9787e0aa6c76694d68de6e " method="POST">
                         
                         <h2 id="contactHeading" class="sectionHeading">Contact Me</h2>
-                        <input class="contactField"  type="text" placeholder="Name" required>
+                        <input class="contactField"  type="text" name="name" placeholder="Name" required>
                         
                         <br>
-                        <input class="contactField" type="email" placeholder="Email" required>
+                        <input class="contactField" type="email" name="email" placeholder="Email" required>
                         <br>
-                        <textarea id="messageField" class="contactField" type="text" name="Message" placeholder="Message"></textarea>
+                        <textarea id="messageField" class="contactField" type="text" name="Message" placeholder="Message" required></textarea>
                         <br>
                         <input type="text" name="_honey" style="display:none">
                         <input id="submitContactFormButton" class="contactField" type="submit">
